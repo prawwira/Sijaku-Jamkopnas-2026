@@ -122,7 +122,7 @@
 }
 
 .hero-title {
-    color: var(--Primary-color, #fff);
+    color: var(--Primary-color, #ffffff);
     font-weight: 700;
     font-size: 44px;
     line-height: 1.3;
@@ -132,7 +132,7 @@
 
 /* ===== SEARCH BAR CARD ===== */
 .hero-search {
-    background: var(--Primary-color, #fff);
+    background: var(--Primary-color, #ffffff);
     border-radius: 12px;
     padding: 14px 20px;
     display: inline-flex;
@@ -166,7 +166,7 @@
     outline: none;
     font-weight: 400;
     font-size: 0.95rem;
-    color: var(--Quinary-color, #000);
+    color: var(--Quinary-color, #000000);
     background: transparent;
     padding: 0;
     cursor: pointer;
@@ -214,13 +214,13 @@
 /* Hero Section */
 
 /* Section kedua */
-.why-us {
+.kenapa-kami {
     padding: 60px 0 80px;
-    background: var(--Primary-color, #fff);
+    background: var(--Primary-color, #ffffff);
 }
  
 /* ----- Strip 6 fitur ----- */
-.features-strip {
+.fitur-strip {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -230,7 +230,7 @@
     border-bottom: 1px solid #e5e5e5;
 }
  
-.feature-item {
+.fitur-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -239,27 +239,27 @@
     text-align: left;
 }
  
-.feature-item i {
+.fitur-item i {
     font-size: 1.4rem;
-    color: var(--Quinary-color, #000);
+    color: var(--Quinary-color, #000000);
     flex-shrink: 0;
 }
  
-.feature-item h4 {
+.fitur-item h4 {
     font-size: 0.95rem;
     font-weight: 700;
-    color: var(--Quinary-color, #000);
+    color: var(--Quinary-color, #000000);
     margin: 0;
 }
  
-.feature-item p {
+.fitur-item p {
     font-size: 0.8rem;
     color: #8a8a8a;
     margin: 0;
 }
  
 /* ----- Konten utama: grid 2 kolom, 2 baris ----- */
-.why-us-main {
+.kenapa-kami-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -269,12 +269,12 @@
 }
  
 /* Kolom kiri atas: teks */
-.why-us-text {
+.kenapa-kami-text {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
  
-.why-us-eyebrow {
+.kenapa-kami-eyebrow {
     display: flex;
     gap: 10px;
     font-size: 0.85rem;
@@ -290,15 +290,15 @@
     border-radius: 2px;
 }
  
-.why-us-heading {
+.kenapa-kami-heading {
     font-size: clamp(1.8rem, 3.2vw, 2.6rem);
     font-weight: 800;
     line-height: 1.15;
-    color: var(--Quinary-color, #000);
+    color: var(--Quinary-color, #000000);
     margin-bottom: 20px;
 }
  
-.why-us-desc {
+.kenapa-kami-desc {
     color: #666;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -306,7 +306,7 @@
     margin-bottom: 32px;
 }
  
-.why-us-cta {
+.kenapa-kami-cta {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: flex;
@@ -343,14 +343,14 @@
 /* Kolom kanan atas dibiarkan kosong secara alami (grid) */
  
 /* Kolom kiri bawah: gambar */
-.why-us-image {
+.kenapa-kami-image {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     border-radius: 16px;
     overflow: hidden;
 }
  
-.why-us-image img {
+.kenapa-kami-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -359,7 +359,7 @@
 }
  
 /* Kolom kanan bawah: card oranye */
-.why-us-card {
+.kenapa-kami-card {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background: var(--Tertiary-color, #FFB33F);
@@ -370,14 +370,14 @@
     justify-content: flex-start;
 }
  
-.why-us-card h3 {
+.kenapa-kami-card h3 {
     font-size: 35px;
     font-weight: 700;
     color: var(--Quinary-color, #000);
     margin-bottom: 16px;
 }
  
-.why-us-card p {
+.kenapa-kami-card p {
     font-size: 0.9rem;
     line-height: 1.7;
     margin-bottom: 24px;
@@ -399,7 +399,7 @@
  
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-    .features-strip {
+    .fitur-strip {
         justify-content: flex-start;
     }
     .feature-item {
@@ -407,17 +407,17 @@
         justify-content: flex-start;
     }
  
-    .why-us-main {
+    .kenapa-kami-main {
         grid-template-columns: 1fr;
     }
-    .why-us-text,
-    .why-us-image,
-    .why-us-card {
+    .kenapa-kami-text,
+    .kenapa-kami-image,
+    .kenapa-kami-card {
         grid-column: 1 / 2;
     }
-    .why-us-text { grid-row: 1; }
-    .why-us-image { grid-row: 2; min-height: 280px; }
-    .why-us-card { grid-row: 3; }
+    .kenapa-kami-text { grid-row: 1; }
+    .kenapa-kami-image { grid-row: 2; min-height: 280px; }
+    .kenapa-kami-card { grid-row: 3; }
 }
  
 @media (max-width: 500px) {
