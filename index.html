@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sijaku</title>
+
+    <!-- Boostrep -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icon -->
+    <link rel="icon" href="images/Logo Tab Sijaku.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="navbar-grid">
+
+            <!-- Kiri: Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/Sijaku Logo.png" alt="Logo" width="30" height="24">
+            </a>
+
+            <!-- Tengah: Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#">Layanan</a>
+                    <a class="nav-link" href="#">Area Layanan</a>
+                    <a class="nav-link" href="#">Cari Tukang</a>
+                    <a class="nav-link" href="#">Tentang Kami</a>
+                </div>
+            </div>
+
+            <!-- Kanan: Search-->
+            <div class="nav-search d-flex align-items-center gap-5 navbar-actions">
+                <form class="d-flex" role="search">
+                    <input class="searcing form-control me-2" type="search" placeholder="Temukan Jasa"
+                        aria-label="Search" />
+                    <button class="btn-search btn-outline-success" type="submit">Cari</button>
+                </form>
+
+                <div class="nav-login d-flex align-items-center gap-4">
+                    <a href="#" class="btn-login">Masuk</a>
+                    <a href="#" class="btn-register">Daftar</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Section Awal -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-slide active" style="background-image: url('images/Hero1.jpg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/Hero2.jfif');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/Hero3.webp');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/Hero4.jpg');"></div>
+            <div class="hero-bg-slide" style="background-image: url('images/Hero5.jpeg');"></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content container-fluid">
+            <h1 class="hero-title">Solusi Tukang Harian & Borongan Profesional Untuk Bangun dan Renovasi Rumah Anda.
+            </h1>
+
+            <div class="hero-search">
+                <div class="hero-search-field">
+                    <label><i class="bi bi-tools"></i> Jasa</label>
+                    <select class="hero-select">
+                        <option>Atap Bocor</option>
+                        <option>Renovasi Rumah</option>
+                        <option>Bangun Baru</option>
+                        <option>Cat Rumah</option>
+                    </select>
+                </div>
+
+                <div class="hero-search-divider"></div>
+
+                <div class="hero-search-field">
+                    <label><i cl66ass="bi bi-geo-alt"></i> Lokasi</label>
+                    <select class="hero-select">
+                        <option>Jakarta</option>
+                        <option>Semarang</option>
+                        <option>Surabaya</option>
+                        <option>Bandung</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-warning hero-search-btn">Temukan Tukang</button>
+            </div>
+        </div>
+    </section>
+    <!-- Section Awal -->
+
+    <!-- Section Kedua -->
+    <section class="why-us">
+
+        <!-- Strip 6 fitur -->
+        <div class="features-strip container-fluid">
+            <div class="feature-item">
+                <i class="bi bi-patch-check"></i>
+                <div>
+                    <h4>Terpercaya</h4>
+                    <p>Verified Partners</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-award"></i>
+                <div>
+                    <h4>Profesional</h4>
+                    <p>Expert Skills</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-sliders"></i>
+                <div>
+                    <h4>Fleksibel</h4>
+                    <p>Custom Solutions</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-lightning-charge"></i>
+                <div>
+                    <h4>Cepat</h4>
+                    <p>Quick Response</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-eye"></i>
+                <div>
+                    <h4>Transparan</h4>
+                    <p>No Hidden Costs</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                    <h4>Bergaransi</h4>
+                    <p>Post-Job Warranty</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konten utama -->
+        <div class="why-us-main container">
+
+            <div class="why-us-text">
+                <h5 class="why-us-eyebrow">
+                    Kenapa Harus Pilih Kami ?
+                </h5>
+
+                <h2 class="why-us-heading">
+                    Bebas<br>
+                    Pilih Sistem<br>
+                    Harian atau Borongan
+                </h2>
+
+                <p class="why-us-desc">
+                    Sijaku siap tumpas segala masalah renovasi rumah Anda di Jakarta dengan cepat, transparan, dan
+                    bergaransi
+                </p>
+
+            </div>
+
+            <div class="why-us-cta">
+                <button type="button" class="btn-lihat-jasa">Lihat Jasa</button>
+                <button type="button" class="btn-arrow" aria-label="Selanjutnya">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="why-us-card">
+                <h3>Singkat Kami</h3>
+                <p>
+                    sijaku.com adalah platform penyedia jasa tukang profesional untuk segala kebutuhan perbaikan dan
+                    renovasi rumah dengan sistem kerja harian maupun borongan. Layanan ini berkomitmen penuh pada
+                    transparansi biaya tanpa ongkos tersembunyi, kecepatan respons, serta jaminan kualitas hasil akhir
+                    yang bergaransi demi kenyamanan dan keamanan pemilik hunian.
+                </p>
+                <button type="button" class="btn-tentang-kami">Tentang Kami</button>
+            </div>
+
+            <div class="why-us-image">
+                <img src="images/Section2.jpg" alt="Tim Tukang Sijaku">
+            </div>
+
+        </div>
+    </section>
+    <!-- Section Kedua -->
+
+    <!-- Section Ketiga -->
+    <section class="gallery">
+        <div class="gallery-header container">
+            <div class="gallery-heading-group">
+                <span class="eyebrow-line"></span>
+                <h2>Galeri Kami</h2>
+                <p>Inspirasi hasil kerja profesional tim Sijaku</p>
+            </div>
+
+            <a href="#" class="gallery-link">
+                Lihat Semua Jasa <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="gallery-grid container">
+
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <img src="images/Perbaikan Atap.jpg" alt="Perbaikan Atap">
+                    <span class="gallery-price">Rp 1jt/proyek</span>
+                </div>
+                <h4>Perbaikan Atap</h4>
+                <p>Pengerjaan : 2 hari</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <img src="images/Renovasi tembok.webp" alt="Renovasi Tembok">
+                    <span class="gallery-price">Rp 1.5jt/proyek</span>
+                </div>
+                <h4>Renovasi Tembok</h4>
+                <p>Pengerjaan : 7 hari</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <img src="images/pengecatan.jpg" alt="Pengecatan">
+                    <span class="gallery-price">Rp 15rb/m²</span>
+                </div>
+                <h4>Pengecatan</h4>
+                <p>Pengerjaan : 2 hari</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <img src="images/Pasang Keramik.webp" alt="Pasang Keramik">
+                    <span class="gallery-price">Rp 50rb/m²</span>
+                </div>
+                <h4>Pasang Keramik</h4>
+                <p>Pengerjaan : 3 hari</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Section Ketiga -->
+
+    <!-- Seciton Keempat -->
+    <section class="pricing">
+        <div class="pricing-header container-fluid">
+            <h2>Tarif Jasa Transparan</h2>
+            <p>Estimasi biaya pengerjaan untuk berbagai jenis kebutuhan Anda. Harga kompetitif dengan kualitas hasil
+                maksimal.</p>
+        </div>
+
+        <div class="pricing-table-wrap container-fluid">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Jenis Tukang</th>
+                        <th>Deskripsi Pekerjaan</th>
+                        <th>Harga Jasa Tukang</th>
+                        <th>Komisi Sijaku 15%</th>
+                        <th>Total Pembayaran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pricing-name">Tukang Bangunan</td>
+                        <td>Renovasi rumah, penambahan ruangan, plester, acian, pemasangan bata.</td>
+                        <td>Rp 1.500.000/proyek</td>
+                        <td>Rp 225.000</td>
+                        <td class="pricing-total">Rp 1.725.000</td>
+                    </tr>
+                    <tr>
+                        <td class="pricing-name">Tukang Cat</td>
+                        <td>Pengecatan interior, eksterior, pagar, tembok, ruko.</td>
+                        <td>Rp 15.000 - 30.000/m²</td>
+                        <td>Rp 4.500</td>
+                        <td class="pricing-total">Rp 34.500/m²</td>
+                    </tr>
+                    <tr>
+                        <td class="pricing-name">Tukang Plafon</td>
+                        <td>Pemasangan dan perbaikan plafon gypsum, PVC, GRC.</td>
+                        <td>Rp 40.000 - 80.000/m²</td>
+                        <td>Rp 12.000</td>
+                        <td class="pricing-total">Rp 92.000/m²</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pricing-note">
+                <i class="bi bi-info-circle-fill"></i>
+                Harga di atas adalah estimasi awal. Harga final akan diberikan setelah survey lokasi oleh tim ahli kami.
+            </div>
+        </div>
+    </section>
+    <!-- Seciton Keempat -->
+
+    <!-- Section Kelima -->
+    <section class="cta-section">
+        <div class="cta-container container-fluid">
+            <h2>Siap Memulai Proyek Impian Anda?</h2>
+            <p>Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik untuk jasa tukang
+                profesional.</p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn-cta btn-whatsapp">
+                    <i class="bi bi-chat-left-text-fill"></i> Whatsapp Admin
+                </a>
+                <a href="#" class="btn-cta btn-phone">
+                    <i class="bi bi-telephone-fill"></i> Telpon Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section Kelima -->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+
+        <div class="footer-top container">
+            <div class="row">
+                <div class="col-md-5 footer-column brand-column">
+                    <h3>Sijaku</h3>
+                    <p>Platform terpercaya penyedia jasa tukang harian dan borongan dengan kualitas profesional, harga
+                        transparan, dan jaminan kepuasan pelanggan.</p>
+
+                    <img src="images/Sosial Media.png" alt="">
+                </div>
+
+                <div class="col-md-3 footer-column">
+                    <h4>Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Renovasi Rumah</a></li>
+                        <li><a href="#">Perbaikan Atap</a></li>
+                        <li><a href="#">Pengecatan Interior</a></li>
+                        <li><a href="#">Instalasi Listrik</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-column">
+                    <h4>Perusahaan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <div class="footer-bottom-wrap">
+                <p class="copyright">&copy; 2024 Sijaku. Professional Home Services.</p>
+                <div class="footer-legal">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-footer">
+            <img src="images/Batik.webp" alt="Background Batik">
+        </div>
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
