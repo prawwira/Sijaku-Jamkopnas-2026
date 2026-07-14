@@ -8,6 +8,10 @@
     --Navy-color: #1B3F8B;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -763,6 +767,409 @@
     font-size: 1.1rem;
 }
 /* Section kelima */
+
+/* Menu Layanan */
+
+/* Banner Section */
+service-banner {
+    padding: 40px 0 60px;
+    background: var(--Primary-color, #fff);
+}
+ 
+.service-banner-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    background: #0d1424;
+    border-radius: 24px;
+    overflow: hidden;
+    min-height: 300px;
+}
+ 
+
+.service-banner-wrap {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* ----- Kiri: teks ----- */
+.service-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 56px;
+}
+ 
+.service-badge {
+    display: inline-block;
+    background: var(--Tertiary-color, #FFB33F);
+    color: #4a2c00;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+ 
+.service-banner-text h2 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+ 
+.service-banner-text p {
+    color: #a9adb8;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0;
+}
+ 
+/* ----- Kanan: gambar dengan overlay gelap ----- */
+.service-banner-image {
+    position: relative;
+}
+ 
+.service-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+.service-banner-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #0d1424 0%, rgba(13,20,36,0.55) 25%, rgba(13,20,36,0.25) 100%);
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .service-banner-inner {
+        grid-template-columns: 1fr;
+    }
+    .service-banner-image {
+        height: 220px;
+        order: -1;
+    }
+    .service-banner-text {
+        padding: 36px 28px;
+    }
+    .service-banner-text h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Banner Section */
+
+/* Layanan Section */
+ /* ===== SERVICES LIST SECTION ===== */
+.services-list {
+    padding: 50px 0 80px;
+    background: var(--Primary-color, #fff);
+}
+ 
+.services-list-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+ 
+/* ----- Sidebar ----- */
+.services-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 100px;
+}
+ 
+.sidebar-filter {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px;
+}
+ 
+.sidebar-filter h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Quinary-color, #000);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+ 
+.filter-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+ 
+.filter-check:last-child {
+    margin-bottom: 0;
+}
+ 
+.filter-check input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--Quinary-color, #000);
+    cursor: pointer;
+}
+ 
+.sidebar-consult {
+    background: #fdedc8;
+    border-radius: 12px;
+    padding: 20px;
+}
+ 
+.sidebar-consult h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6b4a00;
+    margin-bottom: 8px;
+}
+ 
+.sidebar-consult p {
+    font-size: 0.85rem;
+    color: #7a5c1a;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+ 
+.btn-wa {
+    width: 100%;
+    background: var(--Quinary-color, #000);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+ 
+/* ----- Grid kartu ----- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+ 
+.service-card {
+    border: 1px solid #eee;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+ 
+.service-card-img {
+    position: relative;
+    aspect-ratio: 4 / 3;
+}
+ 
+.service-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+.badge-ready {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 10px 4px 6px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+ 
+.badge-ready i {
+    color: #2ecc71;
+    font-size: 1.2rem;
+}
+ 
+.service-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Quinary-color, #000);
+    margin: 14px 16px 6px;
+}
+ 
+.service-card p {
+    font-size: 0.82rem;
+    color: #888;
+    line-height: 1.5;
+    margin: 0 16px 12px;
+    flex-grow: 1;
+}
+ 
+.service-price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--Quinary-color, #000);
+    margin: 0 16px 14px;
+}
+ 
+.service-price span {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #888;
+}
+ 
+.service-price .mulai {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #888;
+    margin-right: 2px;
+}
+ 
+.btn-pesan {
+    background: var(--Tertiary-color, #FFB33F);
+    color: var(--Quinary-color, #000);
+    border: none;
+    padding: 12px;
+    margin: 0 16px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .services-list-grid {
+        grid-template-columns: 1fr;
+    }
+    .services-sidebar {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sidebar-filter,
+    .sidebar-consult {
+        flex: 1 1 260px;
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Layanan Section */
+
+/* Komitmen */
+/* ===== COMMITMENT SECTION ===== */
+.commitment {
+    padding: 40px 0 60px;
+    background: var(--Primary-color, #fff);
+}
+ 
+.commitment-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+ 
+/* ----- Gambar kiri ----- */
+.commitment-image {
+    aspect-ratio: 3 / 4;
+    border-radius: 14px;
+    overflow: hidden;
+}
+ 
+.commitment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+/* ----- Konten kanan ----- */
+.commitment-content h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--Quinary-color, #000);
+    margin-bottom: 24px;
+}
+ 
+.commitment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+ 
+.commitment-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+ 
+.commitment-item i {
+    font-size: 1.2rem;
+    color: var(--Quinary-color, #000);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+ 
+.commitment-item h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--Quinary-color, #000);
+    margin-bottom: 4px;
+}
+ 
+.commitment-item p {
+    font-size: 0.82rem;
+    color: #888;
+    line-height: 1.5;
+    margin: 0;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .commitment-card {
+        grid-template-columns: 1fr;
+    }
+    .commitment-image {
+        aspect-ratio: 16 / 9;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .commitment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Komitmen */
+
+/* Menu Layanan */
 
 /* Footer */
 /* --- Footer Section Styling --- */
