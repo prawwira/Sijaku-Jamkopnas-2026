@@ -2043,6 +2043,387 @@ service-banner {
 
 /* Cari Tukang */
 
+/* Tentang */
+
+/* Section 1 */
+/* ===== ABOUT HERO SECTION ===== */
+.about-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.about-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay gelap, lebih pekat di kiri supaya teks terbaca */
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.1) 75%);
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 620px;
+    padding-left: 60px;
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+.about-hero-content h1 {
+    color: #fff;
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.about-hero-content p {
+    color: #e6e6e6;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    max-width: 480px;
+    margin-bottom: 28px;
+}
+
+.about-hero-cta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-mulai-konsultasi {
+    background: var(--Tertiary-color, #FFB33F);
+    color: var(--Quinary-color, #000);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 14px 26px;
+    border-radius: 8px;
+}
+
+.btn-lihat-layanan {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 14px 26px;
+    border-radius: 8px;
+    border: 1.5px solid #fff;
+}
+
+.about-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0%; /* atur titik fokus gambar */
+    display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: 460px;
+    }
+    .about-hero-overlay {
+        background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.75) 100%);
+    }
+    .about-hero-content {
+        max-width: 100%;
+    }
+}
+/* Section 1 */
+
+/* Section 2 */
+/* ===== VISI MISI SECTION ===== */
+.visi-misi {
+    padding: 60px 0 70px;
+    background: #0d1424;
+}
+
+.visi-misi-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.visi-misi-header h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.heading-underline {
+    display: inline-block;
+    width: 44px;
+    height: 3px;
+    background: var(--Tertiary-color, #FFB33F);
+    border-radius: 2px;
+}
+
+/* ----- Grid 2 kartu ----- */
+.visi-misi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.visi-misi-card {
+    background: #141c30;
+    border: 1px solid #232c42;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+/* ----- Icon Visi / Misi (versi gambar) ----- */
+.visi-misi-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.visi-misi-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.visi-misi-card > p {
+    font-size: 0.88rem;
+    color: #a9adb8;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ----- List item Misi ----- */
+.visi-misi-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.visi-misi-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: #a9adb8;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.visi-misi-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* ----- Icon centang di list (versi gambar) ----- */
+.visi-misi-list li img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .visi-misi-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Section 2 */
+
+/* Section 3 */
+/* ===== CORE VALUES SECTION ===== */
+.core-values {
+    padding: 60px 0 80px;
+    background: var(--Primary-color, #fff);
+}
+
+.core-values-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #b8860b;
+    margin-bottom: 8px;
+}
+
+.core-values-header h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--Quinary-color, #000);
+    margin: 0;
+}
+
+/* ----- Grid 4 kartu ----- */
+.core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.value-card {
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 28px 24px;
+}
+
+/* ----- Icon (versi gambar) ----- */
+.value-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.value-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Quinary-color, #000);
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 0.83rem;
+    color: #888;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .core-values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .core-values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Section 3 */
+
+/* Section 4 */
+/* ===== CTA BANNER SECTION ===== */
+.cta-banner {
+    padding: 40px 0 70px;
+    background: var(--Primary-color, #fff);
+}
+
+.cta-banner-card {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.cta-banner-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.cta-banner-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(1, 23, 73, 0.781);
+    z-index: 1;
+}
+
+.cta-banner-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 40px 48px;
+}
+
+.cta-banner-text h2 {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.cta-banner-text p {
+    color: #d6d8de;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    max-width: 440px;
+    margin: 0;
+}
+
+.btn-cari-tukang {
+    background: var(--Tertiary-color, #FFB33F);
+    color: var(--Quinary-color, #000);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 16px 30px;
+    border-radius: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .cta-banner-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 28px;
+    }
+    .btn-cari-tukang {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Section 4 */
+
+/* Tentang */
+
 
 /* Footer */
 /* --- Footer Section Styling --- */
