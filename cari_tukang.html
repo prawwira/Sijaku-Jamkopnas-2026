@@ -18,14 +18,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
- 
+
     <!-- icon -->
     <link rel="icon" href="images/Logo Tab Sijaku.png" type="image/png">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="navbar-grid">
 
             <!-- Kiri: Logo -->
@@ -61,6 +61,409 @@
         </div>
     </nav>
     <!-- Navbar -->
+
+    <!-- Section full -->
+    <section class="find-tukang">
+        <div class="find-tukang-wrap container">
+
+            <!-- Header -->
+            <div class="find-header">
+                <div class="find-header-text">
+                    <h1>Temukan Tukang Profesional di Pekalongan</h1>
+                    <p>Pesan tenaga ahli terverifikasi untuk segala kebutuhan rumah Anda. Dari perbaikan atap hingga
+                        instalasi listrik, tukang lokal kami siap membantu dengan kualitas terjamin.</p>
+                </div>
+                <div class="find-header-badges">
+                    <span class="badge-outline"><span class="dot green"></span> 124 Tukang Terverifikasi</span>
+                    <span class="badge-outline"><i class="bi bi-geo-alt"></i> Pekalongan Raya</span>
+                </div>
+            </div>
+
+            <div class="find-tukang-body">
+
+                <!-- Sidebar filter -->
+                <aside class="find-sidebar">
+                    <div class="filter-card">
+                        <h4><i class="bi bi-sliders"></i> Filter Pencarian</h4>
+
+                        <div class="filter-group">
+                            <label>Jenis Layanan</label>
+                            <div class="filter-search">
+                                <i class="bi bi-search"></i>
+                                <input type="text" placeholder="Cari layanan...">
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Kecamatan</label>
+                            <select>
+                                <option>Semua Wilayah</option>
+                                <option>Pekalongan Utara</option>
+                                <option>Pekalongan Barat</option>
+                                <option>Pekalongan Timur</option>
+                                <option>Pekalongan Selatan</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Rating Minimal</label>
+                            <div class="filter-pill-row">
+                                <button type="button" class="filter-pill active">4.5 <i
+                                        class="bi bi-star-fill"></i></button>
+                                <button type="button" class="filter-pill">4.0 <i class="bi bi-star-fill"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Status Ketersediaan</label>
+                            <label class="filter-check">
+                                <input type="checkbox"> Tersedia Sekarang
+                            </label>
+                            <label class="filter-check">
+                                <input type="checkbox"> Menerima Booking
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn-terapkan">Terapkan Filter</button>
+                    </div>
+
+                    <div class="nearby-card">
+                        <h4>Tukang Terdekat</h4>
+                        <p>Temukan 12 tenaga ahli di area Pekalongan Utara.</p>
+                        <button type="button" class="btn-deteksi">
+                            <i class="bi bi-geo-alt-fill"></i> Deteksi Lokasi Saya
+                        </button>
+                        <div class="nearby-map">
+                            <iframe src="https://www.google.com/maps?q=Pekalongan+Utara,+Pekalongan&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Konten utama -->
+                <div class="find-main">
+
+                    <div class="find-toolbar">
+                        <p class="find-count">Menampilkan <strong>48</strong> Specialists tersedia</p>
+                        <div class="find-sort">
+                            Urutkan: <span>Rekomendasi</span> <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="tukang-grid">
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge available">Tersedia Hari Ini</span>
+                                <img src="images/Budi Santoso.jfif" alt="Budi Santoso">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Budi Santoso</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                                </div>
+                                <p class="tukang-role">Tukang Bangunan &amp; Atap</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Utara &bull; 124 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp150k<span>/hari</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge busy">Sedang Berjalan</span>
+                                <img src="images/Yanto Prayanti.jfif" alt="Siti Aminah">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Yanto Prayanti</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 5.0</span>
+                                </div>
+                                <p class="tukang-role">Desain Interior &amp; Konsultasi</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Barat &bull; 82 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Biaya konsultasi</span>Rp200k<span>/sesi</span>
+                                    </div>
+                                    <button type="button" class="btn-pesan-tukang outline">Profil</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <img src="images/Agus Prayitno.jfif" alt="Agus Prayitno">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Agus Prayitno</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                                </div>
+                                <p class="tukang-role">Teknisi Listrik &amp; Elektronik</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Timur &bull; 215 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Biaya jasa</span>Rp125k<span>/visit</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge available">Tersedia Hari Ini</span>
+                                <img src="images/Wahyu Setiawan.jfif" alt="Wahyu Setiawan">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Wahyu Setiawan</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                                </div>
+                                <p class="tukang-role">Tukang Cat &amp; Finishing</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Selatan &bull; 97 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp15k<span>/m&sup2;</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <img src="images/Karto Lestari.jfif" alt="Dewi Lestari">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Karto Lestari</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                                </div>
+                                <p class="tukang-role">Tukang Keramik &amp; Lantai</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Utara &bull; 143 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp50k<span>/m&sup2;</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge busy">Sedang Berjalan</span>
+                                <img src="images/Joko Priyono.jfif" alt="Joko Priyono">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Joko Priyono</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.6</span>
+                                </div>
+                                <p class="tukang-role">Tukang Las &amp; Rangka Besi</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Barat &bull; 68 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp1.5jt<span>/proyek</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <img src="images/Rano Kusuma.jfif" alt="Rina Kusuma">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Rano Kusuma</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 5.0</span>
+                                </div>
+                                <p class="tukang-role">Desain Taman &amp; Landscape</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Timur &bull; 54 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Biaya konsultasi</span>Rp250k<span>/sesi</span>
+                                    </div>
+                                    <button type="button" class="btn-pesan-tukang outline">Profil</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge available">Tersedia Hari Ini</span>
+                                <img src="images/Bambang Wijaya.jfif" alt="Bambang Wijaya">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Bambang Wijaya</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                                </div>
+                                <p class="tukang-role">Tukang Plafon &amp; Gypsum</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Selatan &bull; 88 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp40k<span>/m&sup2;</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <img src="images/Yanto Firmansyah.jfif" alt="Yanto Firmansyah">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Yanto Firmansyah</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                                </div>
+                                <p class="tukang-role">Tukang Pipa &amp; Saluran Air</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Utara &bull; 176 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Biaya jasa</span>Rp100k<span>/visit</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge busy">Sedang Berjalan</span>
+                                <img src="images/Fitriyano.jfif" alt="Fitriani">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Fitriyano</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                                </div>
+                                <p class="tukang-role">Tukang Cat Interior</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Barat &bull; 112 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp18k<span>/m&sup2;</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <img src="images/Hendra Gunawan.jfif" alt="Hendra Gunawan">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Hendra Gunawan</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 4.6</span>
+                                </div>
+                                <p class="tukang-role">Tukang Bangunan Umum</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Timur &bull; 201 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Mulai dari</span>Rp1.2jt<span>/proyek</span></div>
+                                    <button type="button" class="btn-pesan-tukang">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tukang-card">
+                            <div class="tukang-img">
+                                <span class="tukang-badge available">Tersedia Hari Ini</span>
+                                <img src="images/Sri Wahyono.jfif" alt="Sri Wahyuni">
+                            </div>
+                            <div class="tukang-body">
+                                <div class="tukang-name-row">
+                                    <h5>Sri Wahyono</h5>
+                                    <span class="tukang-rating"><i class="bi bi-star-fill"></i> 5.0</span>
+                                </div>
+                                <p class="tukang-role">Desain Interior Minimalis</p>
+                                <p class="tukang-meta"><i class="bi bi-geo-alt"></i> Pekalongan Selatan &bull; 63 Proyek
+                                </p>
+                                <div class="tukang-footer">
+                                    <div class="tukang-price"><span>Biaya konsultasi</span>Rp180k<span>/sesi</span>
+                                    </div>
+                                    <button type="button" class="btn-pesan-tukang outline">Profil</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="tukang-pagination">
+                        <button type="button" class="page-btn" aria-label="Sebelumnya"><i
+                                class="bi bi-chevron-left"></i></button>
+                        <button type="button" class="page-btn active">1</button>
+                        <button type="button" class="page-btn">2</button>
+                        <button type="button" class="page-btn">3</button>
+                        <span class="page-dots">...</span>
+                        <button type="button" class="page-btn">12</button>
+                        <button type="button" class="page-btn" aria-label="Selanjutnya"><i
+                                class="bi bi-chevron-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section full -->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+
+        <div class="footer-top container">
+            <div class="row">
+                <div class="col-md-5 footer-column brand-column">
+                    <h3>Sijaku</h3>
+                    <p>Platform terpercaya penyedia jasa tukang harian dan borongan dengan kualitas profesional, harga
+                        transparan, dan jaminan kepuasan pelanggan.</p>
+
+                    <img src="images/Sosial Media.png" alt="">
+                </div>
+
+                <div class="col-md-3 footer-column">
+                    <h4>Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Renovasi Rumah</a></li>
+                        <li><a href="#">Perbaikan Atap</a></li>
+                        <li><a href="#">Pengecatan Interior</a></li>
+                        <li><a href="#">Instalasi Listrik</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-column">
+                    <h4>Perusahaan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <div class="footer-bottom-wrap">
+                <p class="copyright">&copy; 2024 Sijaku. Professional Home Services.</p>
+                <div class="footer-legal">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-footer">
+            <img src="images/Batik.webp" alt="Background Batik">
+        </div>
+
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>
