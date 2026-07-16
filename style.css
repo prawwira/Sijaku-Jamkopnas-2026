@@ -43,6 +43,10 @@ html {
     gap: 1rem;
 }
 
+.nav-search {
+    margin-left: 40px;
+}
+
 .nav-search .btn-search {
     background-color: var(--Tertiary-color);
     color: var(--Secondary-color);
@@ -73,6 +77,57 @@ html {
     text-decoration: none;
     color: var(--Primary-color);
     font-weight: 400;
+}
+
+.btn-login {
+    margin-left: 40px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 6px 10px;
+    background: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+    .navbar-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .nav-search {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 12px !important;
+    }
+
+    .nav-login {
+        justify-content: center;
+    }
 }
 /* Navbar */
 
@@ -130,7 +185,7 @@ html {
     font-weight: 700;
     font-size: 44px;
     line-height: 1.3;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 
@@ -189,23 +244,55 @@ html {
     white-space: nowrap;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE HERO ===== */
 @media (max-width: 768px) {
     .hero {
         min-height: 560px;
+        padding: 100px 0 40px; /* jarak aman dari navbar sticky di atas */
     }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.35;
+        margin-bottom: 24px;
+    }
+
     .hero-search {
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
-        padding: 16px;
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+        gap: 14px;
     }
+
+    .hero-search-field {
+        width: 100%;
+        min-width: 0; /* reset supaya tidak overflow */
+    }
+
+    .hero-select {
+        width: 100%;
+    }
+
     .hero-search-divider {
         width: 100%;
         height: 1px;
     }
+
     .hero-search-btn {
         width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.3rem;
     }
 }
 
